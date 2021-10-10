@@ -38,7 +38,6 @@ function validateForm() {
   } else {
     document.getElementById("email").classList.remove("input-error");
   }
-
   var subjectPointer = "subject";
   var subject = document.forms["contactForm"][subjectPointer].value;
   document.getElementById("subjecterror").innerHTML = "";
