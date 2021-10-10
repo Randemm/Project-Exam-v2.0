@@ -1,0 +1,194 @@
+main {
+  max-width: 1120px;
+  margin: auto;
+}
+p {
+  font-family: "ARSREG", sans-serif;
+}
+h1 {
+  font-size: 3.3em;
+  font-family: "ARSBLACK", sans-serif;
+  color: var(--coal);
+}
+
+h2 {
+  font-size: 26px;
+  font-family: "ARSMED", sans-serif;
+  color: var(--coal);
+}
+h3 {
+  font-size: 24px;
+  font-family: "ARSMED", sans-serif;
+  color: var(--coal);
+}
+
+h4 {
+  font-size: 3em;
+  line-height: 1em;
+  padding-bottom: 20px;
+  font-family: "ARSBLACK", sans-serif;
+  color: #4f8d08;
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  border-color: #4f8d08;
+  margin: 1em 0px;
+}
+h5 {
+  font-size: 24px;
+  font-family: "ARSMED", sans-serif;
+  color: var(--coal);
+}
+h6 {
+  font-size: 24px;
+  font-family: "ARSMED", sans-serif;
+  color: var(--coal);
+}
+.cover-photo > img {
+  width: 100%;
+  height: auto;
+  max-width: 1120px;
+}
+.authortag {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 10px;
+  font-family: "ARSMED", sans-serif;
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  border-color: var(--coal);
+  margin: auto 0px;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+}
+.updated {
+  display: flex;
+  flex-direction: row;
+}
+.posted {
+  display: flex;
+  flex-direction: row;
+}
+.article-page {
+  font-family: "ARSMED", sans-serif;
+  font-size: 20px;
+  margin: 12px 0px;
+  line-height: 32px;
+  max-width: 85%;
+}
+i {
+  font-size: 30px;
+  margin: auto 0px;
+}
+.article-page > img {
+  max-width: 100%;
+}
+.highlight {
+  font-size: 2.5em;
+  font-family: "ARSBLACK", sans-serif;
+  color: var(--coal);
+  line-height: 1em;
+  border-width: 0px 0px 2px 0px;
+  padding-bottom: 25px;
+  border-style: solid;
+  border-color: var(--coal);
+}
+
+figure > img {
+  width: 100%;
+  height: auto;
+}
+figure {
+  margin: 0px;
+  padding: 0px;
+}
+figure > ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+iframe {
+  max-width: 100%;
+  height: auto;
+  min-height: 375px;
+}
+@media only screen and (max-width: 1180px) {
+  main {
+    margin: 0px 15px 350px 15px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .authortag {
+    flex-direction: column;
+    grid-gap: 0px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  .article-page {
+    max-width: 85%;
+  }
+  h4 {
+    font-size: 2em;
+  }
+  .updated > p {
+    margin: 7px 0px;
+  }
+  .author > p {
+    margin: 7px 0px;
+  }
+  .posted > p {
+    margin: 7px 0px;
+  }
+  .modal-image {
+    width: 100%;
+  }
+}
+
+figure > img {
+  cursor: pointer;
+  transition: 0.2s;
+}
+figure > img:hover {
+  opacity: 0.8;
+}
+.modal {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.modal-picture {
+  display: block;
+  margin: auto auto 1% auto;
+  width: 90%;
+  max-width: 1120px;
+}
+.modal-picture,
+.caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.caption {
+  font-size: 20px;
+  color: var(--graypaint);
+  margin: 0px;
+  text-align: center;
+  margin-bottom: auto;
+  font-family: "ARSMED", sans-serif;
+}

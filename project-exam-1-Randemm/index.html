@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Videogameblog | Home</title>
+      <meta
+        name="description"
+        content="A blog about videogames, with reviews, news and updates about the world of videogames."
+      />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta charset="UTF-8" />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      />
+      <link href="styles/index.css" rel="stylesheet" />
+      <link href="styles/core.css" rel="stylesheet" />
+    </head>
+    <body>
+      <header></header>
+
+      <main>
+        <div class="carousel">
+          <div class="slide-container"></div>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          <div class="thumbnail-container"></div>
+        </div>
+        <div class="reviews">
+          <h1>Latest Posts</h1>
+          <div class="main-content">
+            <button class="posts-button" id="post-button" onclick="morePosts()">
+              More posts
+            </button>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+      <script type="module" src="js/index.js"></script>
+      <script src="js/core.js"></script>
+    </body>
+  </html>
+</html>

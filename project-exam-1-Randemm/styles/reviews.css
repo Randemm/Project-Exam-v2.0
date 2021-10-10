@@ -1,0 +1,232 @@
+.content-wrap > h1 {
+  font-family: "ARSBLACK", sans-serif;
+  font-size: 50px;
+  margin: 35px auto 10px auto;
+  width: 1120px;
+}
+
+main {
+  max-width: 100%;
+}
+.reviews {
+  display: flex;
+  flex-direction: row;
+  max-width: 1120px;
+  margin: auto;
+  justify-content: space-between;
+  gap: 1em;
+}
+.left-content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.right-content {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+}
+.trending-posts {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 15px;
+  gap: 1em;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.404);
+}
+.trendPost {
+  width: 100%;
+  background-color: var(--coal);
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.205);
+  border-radius: 20px 0px 0px 20px;
+  transition: ease-in-out 0.2s;
+  opacity: 90%;
+}
+.trendPost:hover {
+  transition: ease-in-out 0.3s;
+  opacity: 70%;
+  cursor: pointer;
+}
+.trendPost:hover > .whiteTitle {
+  color: #529605;
+  transition: ease-in-out 0.3s;
+}
+
+.icon-box {
+  background-color: var(--altgreen);
+  display: flex;
+}
+.icon-box > i {
+  color: var(--graypaint);
+  padding: 0px 10px;
+  margin: auto;
+}
+.trendHead {
+  font-family: "ARSREG", sans-serif;
+  text-transform: uppercase;
+  background-color: var(--coal);
+  color: var(--graypaint);
+  margin: 30px 0px 0px 0px;
+  font-size: 20px;
+  padding: 15px;
+}
+.whiteTitle {
+  font-family: "ARSREG", sans-serif;
+  color: #fff;
+  padding: 0px 5px 0px 5px;
+  margin: 1em;
+  transition: ease-in-out 0.3s;
+  text-shadow: 0px 0px black;
+}
+
+.recent-posts {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 15px;
+  gap: 1em;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.404);
+}
+.recent-post {
+  width: 310px;
+  display: flex;
+  font-family: "ARSREG", sans-serif;
+  font-size: 13px;
+  box-shadow: 1px 3px 3px rgb(0 0 0 / 20%);
+  border-top: 3px solid var(--altblue);
+  -webkit-transition: ease-in-out 0.1s;
+  -moz-transition: ease-in-out 0.1s;
+  -o-transition: ease-in-out 0.1s;
+}
+.recent-post:hover {
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.recent-post > p {
+  margin: 0;
+  padding: 1em;
+}
+.recent-post > img {
+  width: 45%;
+  height: auto;
+}
+.thumbnail > img {
+  border-bottom: 6px solid var(--altblue);
+  width: 100%;
+  height: auto;
+  transition: ease-in-out 0.1s;
+}
+.thumbnail {
+  width: 30%;
+  margin: 30px 0px 30px 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  min-height: 200px;
+  box-shadow: 0px 5px 6px rgb(0 0 0 / 20%);
+  transition: ease-in-out 0.2s;
+}
+.thumbnail:hover > img {
+  opacity: 85%;
+  border-bottom: 12px solid var(--altblue);
+  transition: ease-in-out 0.2s;
+}
+.thumbnail:hover {
+  cursor: pointer;
+}
+.content-wrap {
+  margin: auto;
+  position: relative;
+}
+.post-title {
+  font-family: "ARSMED", sans-serif;
+  margin: 5px;
+}
+.author {
+  font-family: "ARSREG", sans-serif;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  margin: 5px;
+}
+
+.hiddenclass {
+  display: none;
+}
+
+button {
+  background-color: var(--darkblue);
+  transition: ease-in-out 0.3s;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  border: 2px solid var(--altblue);
+  border-radius: 6px;
+  padding: 20px;
+  font-size: 16px;
+  font-family: "ARSBOLD", sans-serif;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  box-shadow: 2px 4px 0px rgba(34, 24, 117, 0.704);
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--altblue);
+  transition: ease-in-out 0.3s;
+}
+button:active {
+  cursor: wait;
+}
+
+@media only screen and (max-width: 1175px) {
+  main {
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .reviews {
+    flex-direction: column;
+  }
+  .recent-post {
+    width: 100%;
+  }
+  .right-content {
+    margin-top: 20px;
+    width: 100%;
+  }
+  button {
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .thumbnail {
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    max-height: fit-content;
+  }
+  .author {
+    position: inherit;
+  }
+  .left-content {
+    gap: 0.5em;
+    margin-bottom: 80px;
+  }
+  button {
+    bottom: -86px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .recent-post > img {
+    width: 100%;
+  }
+  .recent-post {
+    flex-direction: column;
+  }
+}

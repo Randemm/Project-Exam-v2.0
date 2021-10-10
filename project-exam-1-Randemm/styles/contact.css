@@ -1,0 +1,135 @@
+.headline {
+  font-family: "ARSBLACK", sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 60%;
+  color: var(--coal);
+}
+
+p {
+  max-width: 60%;
+  font-family: "ARSMED", sans-serif;
+  margin: auto auto 10px auto;
+  text-align: center;
+}
+body {
+  margin: 0px;
+}
+main {
+  margin: 0px 25px 0px 25px;
+}
+.main-content {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+img {
+  max-width: 100%;
+  margin: 15px auto;
+  height: auto;
+}
+.contactform {
+  width: 80%;
+  margin: auto;
+}
+.contactform > i {
+  color: var(--turtleg);
+  display: flex;
+  font-size: 150px;
+  justify-content: center;
+  padding: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 40px auto auto auto;
+}
+.contactinfo {
+  background-color: #fbfcff56;
+  border-radius: 6px;
+  border-color: var(--altblue);
+  border-style: solid;
+  border-width: 2px;
+  height: 55px;
+  margin: 0.5% 0% 2% 0%;
+  box-shadow: 5px 8px 5px rgba(0, 0, 0, 10%);
+  font-size: 20px;
+  padding-left: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+}
+.userquestion {
+  background-color: #fbfcff56;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--altblue);
+  height: 200px;
+  box-shadow: 5px 8px 5px rgba(0, 0, 9, 16%);
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  padding: 15px;
+  text-align: left;
+  vertical-align: top;
+  margin: 0.5% 0% 2% 0%;
+}
+label {
+  font-family: "Raleway", sans-serif;
+  display: none;
+}
+.input-error {
+  border: 2px solid #630b22;
+}
+span {
+  padding-left: 10px;
+  font-family: "ARSMED", sans-serif;
+  color: #630b22;
+  max-width: 80%;
+}
+.submit {
+  background-color: var(--darkblue);
+  color: #fff;
+  transition: ease-in-out 0.3s;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  border: 2px solid var(--altblue);
+  border-radius: 6px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  font-family: "ARSBOLD", sans-serif;
+  width: 50%;
+  margin: 15px auto;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  padding: 15px;
+  box-shadow: 2px 4px 0px rgba(34, 24, 117, 0.704);
+}
+.submit:hover {
+  cursor: pointer;
+  background-color: var(--altblue);
+  transition: ease-in-out 0.3s;
+}
+@media only screen and (max-width: 695px) {
+  .headline {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  p {
+    max-width: 80%;
+  }
+  .headline {
+    font-size: 22px;
+    max-width: 80%;
+    margin: 20px auto;
+  }
+  .submit {
+    font-size: 14px;
+  }
+}

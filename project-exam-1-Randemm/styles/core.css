@@ -1,0 +1,391 @@
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/raleway.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: PS2P;
+  src: url("../fonts/PressStart2P.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: OpenSansBold;
+  src: url("../fonts/OpenSans-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: ARSREG;
+  src: url("../fonts/ARSMaquettePro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: ARSMED;
+  src: url("../fonts/ARSMaquettePro-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: ARSBOLD;
+  src: url("../fonts/ARSMaquettePro-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: ARSBLACK;
+  src: url("../fonts/ARSMaquettePro-Black.ttf") format("truetype");
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+:root {
+  --turtleg: #60af05;
+  --coal: #151515;
+  --graypaint: #edeff4;
+  --altblue: #716fc7b9;
+  --altgreen: #4f8d08b6;
+  --darkblue: #47467cd3;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0px;
+  overflow-x: hidden;
+  position: relative;
+  background-color: var(--graypaint);
+}
+
+main {
+  margin-bottom: 250px;
+}
+
+header {
+  background-color: var(--coal);
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.64);
+}
+
+.logo {
+  display: flex;
+  margin-top: 15px;
+}
+
+.logolink {
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  color: var(--graypaint);
+  padding: 15px 0px 15px 15px;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburgerout {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.hamburgerout ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.hamburgeractive {
+  background-color: #3f3d3dce;
+}
+
+.hamburgerout li {
+  border-style: solid;
+  border-width: 2px 0px 0px 0px;
+  border-color: var(--turtleg);
+  font-family: "OpenSansReg", sans-serif;
+  text-transform: uppercase;
+  padding: 20px 0px;
+}
+
+.hamburgerout a {
+  color: var(--graypaint);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.hamburgerout li:hover {
+  background-color: rgba(255, 255, 255, 0.144);
+  transition: ease-in-out 0.3s;
+}
+
+.header {
+  font-family: "PS2P", cursive;
+  font-size: 35px;
+  max-height: 60px;
+  text-transform: uppercase;
+  color: var(--graypaint);
+  margin: auto 0px 0px 0px;
+}
+
+.headergreen {
+  color: var(--turtleg);
+  font-family: "PS2P", cursive;
+  font-size: 35px;
+  max-height: 60px;
+  text-transform: uppercase;
+  margin: auto 0px 0px 0px;
+}
+
+.navbar {
+  overflow-x: hidden;
+}
+
+.navlist {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+
+.hamburger > i {
+  font-size: 40px;
+}
+
+.search {
+  color: var(--graypaint);
+  background-color: var(--turtleg);
+  margin-left: 35px;
+  padding: 4.3px 5px;
+}
+
+.search > i {
+  font-size: 40px;
+}
+
+.searchbar {
+  background-color: var(--altblue);
+  padding: 4.3px 105px 4.3px 5px;
+  transition: ease-in-out 1.8s;
+}
+
+.search:hover {
+  cursor: pointer;
+}
+
+.navbutton {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  margin: 20px;
+  color: var(--graypaint);
+  text-transform: uppercase;
+  margin: 45px 20px 0px 20px;
+  text-align: center;
+  margin: 45px 20px 0px 20px;
+  white-space: nowrap;
+  border-top: solid 4px var(--turtleg);
+  padding: 20px 20px 5px 20px;
+  margin: 0px 0px 0px 2px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.navbutton:hover {
+  background-color: rgba(255, 255, 255, 0.144);
+  transition: ease-in-out 0.3s;
+  color: #529605;
+}
+.navbutton:active {
+  background-color: var(--graypaint);
+}
+
+.navbutton-active {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  margin: 20px;
+  color: var(--graypaint);
+  text-transform: uppercase;
+  margin: 45px 20px 0px 20px;
+  text-align: center;
+  margin: 45px 20px 0px 20px;
+  white-space: nowrap;
+  border-top: solid 4px var(--turtleg);
+  padding: 20px 20px 5px 20px;
+  margin: 0px 0px 0px 2px;
+  background-color: rgba(255, 255, 255, 0.048);
+}
+.navbutton-active:hover {
+  color: #529605;
+  transition: ease-in-out 0.3s;
+}
+
+.topsection {
+  display: flex;
+  grid-gap: 60px;
+  width: 1120px;
+  margin: 0px auto;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: var(--coal);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dmca {
+  width: 1120px;
+  margin: auto;
+  padding: 20px 20px;
+}
+
+.footerlist {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  list-style: none;
+  color: #fbfcff;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  padding: 0;
+}
+
+.footerlist > li {
+  margin-right: 20px;
+  border-width: 0px 1px 0px 0px;
+  padding-right: 20px;
+  border-style: solid;
+  border-color: var(--graypaint);
+}
+
+.footerlink {
+  text-decoration: none;
+  color: var(--graypaint);
+  transition: ease-in-out 0.4s;
+}
+.footerlink:hover {
+  margin: 5px;
+  text-decoration: underline;
+  color: var(--turtleg);
+}
+
+.copyright {
+  color: #fbfcff;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  margin: 0px 0px 35px 0px;
+}
+
+/* MEDIAQUERY */
+
+@media only screen and (min-width: 1246px) {
+  .hamburgerout {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .logo {
+    transition: ease-in-out 1s;
+  }
+}
+
+@media only screen and (min-width: 1180px) {
+  .hamburgerout {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .navbutton {
+    display: none;
+  }
+
+  .logolink {
+    margin-top: 25px;
+  }
+
+  .navbutton-active {
+    display: none;
+  }
+
+  .search {
+    padding: 20.5px 5px 5px 5px;
+  }
+
+  .navlist {
+    position: relative;
+    margin: 0px;
+  }
+
+  .topsection {
+    display: flex;
+    grid-gap: 0px;
+    justify-content: start;
+  }
+
+  .hamburger {
+    display: flex;
+    padding: auto;
+  }
+
+  .headergreen {
+    font-size: 1.3em;
+    margin: auto 0px;
+  }
+
+  .header {
+    font-size: 1.3em;
+    margin: auto 0px;
+  }
+
+  .logo {
+    transition: ease-in-out 1s;
+    margin: 0px 15px;
+  }
+
+  .navbar {
+    right: 0;
+    position: absolute;
+  }
+
+  .footerlist {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .logo {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header {
+    font-size: 15px;
+    margin: 0px;
+  }
+
+  .headergreen {
+    font-size: 15px;
+    margin: 0px;
+  }
+
+  .logolink {
+    margin-top: 15px;
+  }
+}

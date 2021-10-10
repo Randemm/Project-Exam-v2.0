@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Videogameblog | Contact Us</title>
+      <meta
+        name="Contact page"
+        content="Contact page for Videogameblog. Get in touch with us here with any questions you may have. We provide you with an easy contact form that will help us respond faster."
+      />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta charset="UTF-8">
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      />
+      <link href="styles/contact.css" rel="stylesheet" />
+      <link href="styles/core.css" rel="stylesheet" />
+    </head>
+    <body>
+      <header></header>
+      <main>
+        <div class="main-content">
+          <img width="3355" height="1246"
+            src="images/full-team.06ae6789.png"
+            alt="Illustration of our team working together."
+          />
+          <div id="info" class="info">
+            <h1 class="headline">We appreciate your feedback!</h1>
+            <p>
+              Your feedback is highly appreciated and will help us to improve
+              further on our ability to produce content that ressonates with our
+              readers and customers.
+            </p>
+            <p>
+              We do not store any of your private information after the ticket
+              has been resolved.
+            </p>
+          </div>
+          <div id="form" class="contactform">
+            <form name="contactForm" onsubmit="return validateForm()">
+              <label for="fname">Full name:</label>
+              <input
+                class="contactinfo"
+                type="text"
+                id="fname"
+                name="full name"
+                placeholder="Full Name"
+              />
+              <span id="fnameerror"></span>
+              <label for="email">Email:</label>
+              <input
+                class="contactinfo"
+                type="text"
+                id="email"
+                name="email"
+                placeholder="What's your email?"
+              />
+              <span id="emailerror"></span>
+              <label for="text">Subject:</label>
+              <input
+                class="contactinfo"
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+              ></input>
+              <span id="subjecterror"></span>
+              <label for="text">Message:</label>
+              <textarea
+                class="userquestion"
+                type="text"
+                id="message"
+                name="message"
+                placeholder="Your questions.."
+              ></textarea>
+              <span id="messageerror"></span>
+              <input class="submit" id="submit" type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+      <script src="js/contact.js"></script>
+      <script src="js/core.js"></script>
+    </body>
+  </html>
+</html>
